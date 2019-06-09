@@ -1,0 +1,375 @@
+:root {
+  --middle-col-size: 30em;
+  --middle-col-subsection-size: 28em;
+  --side-col-size: 13em;
+  --side-col-subsection-size: 11em;
+  --side-col-button-size: 9em;
+
+  --side-col-vertical-offset: 5em;
+}
+
+body {
+  /* background-color: white; */
+ background: url("../images/splotchyRed.jpg") repeat;
+ /* background: url("../images/fantasy_large_background_2.jpg") repeat; */
+}
+
+.page_content{
+  background: white;
+  /* background: url("../images/fantasy_large_background_2.jpg") repeat; */
+  /* background-position: center top;  */  
+
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin: auto;
+
+  outline-style: inset;
+  outline-color: gold;
+
+  min-width: 60em;
+  max-width: 60em;
+
+  opacity: 0.9;
+}
+
+.column_mid{
+  /* background: url( "./images/goldGildedRedBackground.jpg" ); */
+  background: rgba(255, 255, 255, .0);
+  /* outline-style: inset; */
+  /* outline-color: gold; */
+
+  margin-right: 1em;
+  margin-left: 1em;
+
+  display: inline-block;
+  vertical-align: top;
+  min-width: var(--middle-col-size);
+  max-width: var(--middle-col-size);
+}
+
+.column_left{
+  /* background: url( "./images/goldGildedRedBackground.jpg" ); */
+  background: rgba(255, 255, 255, .0);
+  /* outline-style: inset; */
+  /* outline-color: gold; */
+
+  margin-top: var(--side-col-vertical-offset);
+
+  display: inline-block;
+  vertical-align: top;
+  min-width: var(--side-col-size);
+  max-width: var(--side-col-size);
+}
+
+.column_right{
+  /* background: url( "./images/goldGildedRedBackground.jpg" ); */
+  background: rgba(255, 255, 255, .0);
+  /* outline-style: inset; */
+  /* outline-color: gold; */
+
+  margin-top: var(--side-col-vertical-offset);
+
+  display: inline-block;
+  min-width: var(--side-col-size);
+  max-width: var(--side-col-size);
+}
+
+.side_column_sub_box{
+  /* outline-style: inset; */
+  /* outline-color: red; */
+
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  min-width: var(--side-col-subsection-size);
+  max-width: var(--side-col-subsection-size);
+  min-height: var(--side-col-subsection-size);
+  max-height: var(--side-col-subsection-size);
+}
+
+.middle_column_sub_box{
+  /* outline-style: inset; */
+  /* outline-color: red; */
+
+  text-align: center;
+
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  min-width: var(--middle-col-subsection-size);
+  max-width: var(--middle-col-subsection-size);
+  /* min-height: var(--middle-col-subsection-size);
+  max-height: var(--middle-col-subsection-size); */
+}
+
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+p{
+  font-family: 'Montserrat', serif; /* Fantasy like */
+  color: gold;
+  -webkit-text-stroke: .8px grey;
+}
+
+.p_Fonts{
+  font-family: 'Kanit', sans-serif; /* Looks like code */
+  font-family: 'Cinzel', serif; /* Fantasy like */
+  font-family: 'Montserrat', sans-serif; /* Professional & Pleasant */
+}
+
+/* Style buttons */
+.icon_btn {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+
+  padding: 0em;
+  margin: 0em;
+
+  min-width: var(--side-col-subsection-size);
+  max-width: var(--side-col-subsection-size);
+  min-height: var(--side-col-subsection-size);
+  max-height: var(--side-col-subsection-size);
+
+  background:url('https://img.icons8.com/metro/420/sword.png') no-repeat left center;
+  background-size: cover;
+}
+
+/* Darker background on mouse-over */
+.icon_btn:hover {
+  background-color: red;
+}
+/* Style buttons */
+
+h2{
+  color: gold;
+  text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black;
+
+  font-weight: 900;
+  font-size: 46px;
+  /* -webkit-text-stroke: .1px black; */
+  font-family: 'Cinzel', sans-serif; /* Professional & Pleasant */
+
+  padding: 0em;
+  margin: 0em;
+}
+
+h3{
+  color: gold;
+  text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black;
+
+  font-weight: 900;
+  font-size: 28px;
+  /* -webkit-text-stroke: .1px black; */
+  font-family: 'Cinzel', sans-serif; /* Professional & Pleasant */
+
+  padding: 0em;
+  margin: 0em;
+}
+
+h4{
+  color: gold;
+  font-weight: bold;
+  font-size: 36px;
+  -webkit-text-stroke: .1px black;
+  font-family: 'Cinzel', sans-serif; /* Professional & Pleasant */
+
+  padding: 0em;
+  margin: 0em;
+}
+
+h5{
+  color: white;
+  text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black;
+
+  font-weight: 900;
+  font-size: 36px;
+  /* -webkit-text-stroke: .1px white; */
+  font-family: 'Cinzel', sans-serif; /* Professional & Pleasant */
+
+  padding: 0em;
+  margin: 0em;
+}
+
+
+
+/* Style buttons */
+.icon_btn_tl {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+
+  padding: 0em;
+  margin: 0em;
+
+  min-width: var(--side-col-subsection-size);
+  max-width: var(--side-col-subsection-size);
+  min-height: var(--side-col-subsection-size);
+  max-height: var(--side-col-subsection-size);
+
+  background:url("../images/front_page_icons/1.png") no-repeat left center;
+  background-size: cover;
+}
+
+/* Darker background on mouse-over */
+.icon_btn_tl:hover {
+  background-color: gold;
+  border-radius: 50%;
+}
+/* Style buttons */
+
+/* Style buttons */
+.icon_btn_ml {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+
+  padding: 0em;
+  margin: 0em;
+
+  min-width: var(--side-col-subsection-size);
+  max-width: var(--side-col-subsection-size);
+  min-height: var(--side-col-subsection-size);
+  max-height: var(--side-col-subsection-size);
+
+  background:url("../images/front_page_icons/2.png") no-repeat left center;
+  background-size: cover;
+}
+
+/* Darker background on mouse-over */
+.icon_btn_ml:hover {
+  background-color: gold;
+  border-radius: 50%;
+}
+/* Style buttons */
+
+/* Style buttons */
+.icon_btn_bl {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+
+  padding: 0em;
+  margin: 0em;
+
+  min-width: var(--side-col-subsection-size);
+  max-width: var(--side-col-subsection-size);
+  min-height: var(--side-col-subsection-size);
+  max-height: var(--side-col-subsection-size);
+
+  background:url("../images/front_page_icons/3.png") no-repeat left center;
+  background-size: cover;
+}
+
+/* Darker background on mouse-over */
+.icon_btn_bl:hover {
+  background-color: gold;
+  border-radius: 50%;
+}
+/* Style buttons */
+
+/* Style buttons */
+.icon_btn_tr {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+
+  padding: 0em;
+  margin: 0em;
+
+  min-width: var(--side-col-subsection-size);
+  max-width: var(--side-col-subsection-size);
+  min-height: var(--side-col-subsection-size);
+  max-height: var(--side-col-subsection-size);
+
+  background:url("../images/front_page_icons/4.png") no-repeat left center;
+  background-size: cover;
+}
+
+/* Darker background on mouse-over */
+.icon_btn_tr:hover {
+  background-color: gold;
+  border-radius: 50%;
+}
+/* Style buttons */
+
+/* Style buttons */
+.icon_btn_mr {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+
+  padding: 0em;
+  margin: 0em;
+
+  min-width: var(--side-col-subsection-size);
+  max-width: var(--side-col-subsection-size);
+  min-height: var(--side-col-subsection-size);
+  max-height: var(--side-col-subsection-size);
+
+  background:url("../images/front_page_icons/5.png") no-repeat left center;
+  background-size: cover;
+}
+
+/* Darker background on mouse-over */
+.icon_btn_mr:hover {
+  background-color: gold;
+  border-radius: 50%;
+}
+/* Style buttons */
+
+/* Style buttons */
+.icon_btn_br {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+
+  padding: 0em;
+  margin: 0em;
+
+  min-width: var(--side-col-subsection-size);
+  max-width: var(--side-col-subsection-size);
+  min-height: var(--side-col-subsection-size);
+  max-height: var(--side-col-subsection-size);
+
+  background:url("../images/front_page_icons/6.png") no-repeat left center;
+  background-size: cover;
+}
+
+/* Darker background on mouse-over */
+.icon_btn_br:hover {
+  background-color: gold;
+  border-radius: 50%;
+  /* background-image: linear-gradient(to top, purple , gold); */
+}
+/* Style buttons */
