@@ -1,0 +1,55 @@
+{
+    "names": ["john", "gorybdys"],
+
+    "genders": ["male", "female"],
+    "personalities": ["male", "female"],
+    "mannerisms": ["twitchy", "always drunk", "laughs easily"],
+    "quirks": ["can't wink", "adores babies"],
+    "races": ["human", "elf", "dwarf", "orc", "lizard-person"],
+    "fears": ["bugs", "fire", "dogs", "darkness", "death", "heights", "underground"],
+    "weaknesses": ["sugary foods", "shiny jewely"],
+    "strengths": ["hardy", "fast", "strong"],
+
+    "city-focus": {
+        "jobs": ["iron smith", "trader", "beggar", "tailor", "thief", "glass blower", "carver", "cook", 
+            "priest", "mason"],
+        "skill_levels": ["master", "skilled", "apprentice", "novice", "utterly incompetent"],
+        "trustworthiness": ["very trustworthy", "not trustworthy"],
+        "friendliness": ["a total dick", "extremely friendly", "distant", "reproachful", "anxious"],
+        "wealth": ["disgustingly wealthy", "upper middle class wealthy", "middle class wealthy", "working class",
+            "struggling to get by", "about to be evicted", "impovrished", "in massive debt"],
+        "house_material": ["stone", "brick", "wood", "straw", "marble"],
+        "house_type": ["shack", "cottage", "cabin", "house", "manor", "mansion"],
+        "house_adj": ["ornate", "gnarled", "homely", "infested", "putrid", "old", "small", "large", 
+            "comfortable"],
+        "nobility_status": ["duke", "peasant"],
+        "pets": ["dog", "cat", "parrot", "lizard", "fish", "monkey"]
+    },
+    "combat-focus": {
+        "classes": ["barbarian", "wizard", "ranger", "druid", "cleric", "fighter", "rogue", "sorcerer"],
+        "classes_expanded": {
+            "barbarian":{
+                "weapons": ["club", "axe", "broadsword"],
+                "combat_styles": ["bloodlusted at start of combat", "defensive but reckless"]
+            },
+            "wizard":{
+                "weapons": ["club", "axe", "broadsword"],
+                "combat_styles": ["protects self with defensive magic", "cowardly and cruel"]
+            }
+        },
+        "posse": ["group of bandits", "hired thugs", "team of assassins", "squire"],
+        "abilities": ["can fart marbles"],
+        "combat_styles": ["defensive", "offensive"],
+        "loot": ["5 GP", "500 GP", "sword"],
+        "long_term_goals": ["become king of the hokage"],
+        "post_long_term_goals": ["eat a whole horse"]
+    },
+    "exploration-focus": {
+        "sleep_locations": ["in the mountains", "secret waterfall hideout", "underground tunnel"],
+        "motivation": ["become one with nature", "kill a certain noble", "escape the law"],
+        "free_time_activities": ["sculpts strange figures that end up scattered throughout the region",
+            "hunts", "gardens and tends to their domicile", "experiments with magic"]
+    }
+    
+
+}

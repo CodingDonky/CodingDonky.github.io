@@ -14,59 +14,6 @@
 
   <div class="canvas_wrapper">
 
-      <div class="app_row_wrapper">
-          <div class="app_row_col_left_large">
-          </div>
-    
-          <div class="app_row_col_right_small">
-            <div onmousedown="myFunction(this)" class="button_type1">
-                <div class="button_text">
-                    Print Stuff
-                </div>
-              </div>
-          </div>
-        </div>
-
-    <div class="app_row_wrapper">
-      <div class="app_row_col_left_large">
-        <form>
-            <label for="name_field_title">Name:</label>
-            <input type="text" id="name_field" name="name_field_title" value="">
-        </form>
-      </div>
-
-      <div class="app_row_col_right_small">
-        <div onmousedown="mouseDown_name(this)" onmouseup="mouseUp_name(this)" class="button_type1">
-            <div class="button_text">
-                Generate 
-                <br>
-                Name
-            </div>
-          </div>
-      </div>
-    </div>
-
-
-    <div class="app_row_wrapper">
-        <div class="app_row_col_left_large">
-          <form>
-              <label for="occupation_field_title">Occupation:</label>
-              <input type="text" id="occupation_field" name="occupation_field_title" value="">
-          </form>
-        </div>
-  
-        <div class="app_row_col_right_small">
-          <div onmousedown="mouseDown_occupation(this)" class="button_type1">
-            <div class="button_text">
-                Generate 
-                <br>
-                Occupation
-            </div>
-          </div>
-            
-        </div>
-    </div>
-
     <div class="app_row_wrapper">
         <div class="app_row_col_left_large">
           <form>
@@ -74,25 +21,73 @@
                 Combat-Oriented (Combat stats will be the primary focus) <br>
               <input type="radio" id="npc_type_radio_town" name="npc_type_radio" value="rp-focused" checked> 
                 Town-Oriented (Generates a personality and job for the resident of a town/city) <br>
-              <input type="radio" id="npc_type_radio_wild" name="npc_type_radio" value="combo"> 
-                Wild-Oriented (The NPC does not live in a city, and is partially combat oriented)
+              <input type="radio" id="npc_type_radio_explore" name="npc_type_radio" value="combo"> 
+                Exploration-Oriented (The NPC does not live in a city, and is partially combat oriented)
           </form>
         </div>
   
         <div class="app_row_col_right_small">
+            <div onmousedown="mouseDown_generateNPC(this)" class="button_type1">
+                <div class="button_text">
+                    Generate 
+                    <br>
+                    NPC
+                </div>
+           </div>
         </div>
     </div>
     
 
     <div class="app_row_wrapper">
 
-      <form>
-        <input type="radio" name="gender" value="male" checked> Male<br>
-        <input type="radio" name="gender" value="female"> Female<br>
-        <input type="radio" name="gender" value="other"> Other
-      </form>
-      
+      <p id="print_output">
+        
+      </p>
+
     </div>
+
+
+
+  <div class="app_row_wrapper">
+    <div class="app_row_col_left_large">
+      <form>
+          <label for="name_field_title">Name:</label>
+          <input type="text" id="name_field" name="name_field_title" value="">
+      </form>
+    </div>
+
+    <div class="app_row_col_right_small">
+      <div onmousedown="mouseDown_name(this)" onmouseup="mouseUp_name(this)" class="button_type1">
+          <div class="button_text">
+              Generate 
+              <br>
+              Name
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+  <div class="app_row_wrapper">
+      <div class="app_row_col_left_large">
+        <form>
+            <label for="occupation_field_title">Occupation:</label>
+            <input type="text" id="occupation_field" name="occupation_field_title" value="">
+        </form>
+      </div>
+
+      <div class="app_row_col_right_small">
+        <div onmousedown="mouseDown_occupation(this)" class="button_type1">
+          <div class="button_text">
+              Generate 
+              <br>
+              Occupation
+          </div>
+        </div>
+          
+      </div>
+  </div>
+
 
     <div class="app_row_wrapper">
 

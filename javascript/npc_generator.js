@@ -1,12 +1,6 @@
 // document.getElementById('date').innerHTML = new Date().toDateString();
 
-// document.getElementById("demo").onclick = function() {
-//     myFunction()};
-
-// $.getJSON("test.json", function(json) {
-//   console.log(json); // this will show the info it in firebug console
-// });
-
+// READING JSON FILE
 function readTextFile(file, callback) {
   var rawFile = new XMLHttpRequest();
   rawFile.overrideMimeType("application/json");
@@ -19,26 +13,36 @@ function readTextFile(file, callback) {
   rawFile.send(null);
 }
 
-//usage:
-// readTextFile("test.json", function(text){
-  readTextFile("http://mysafeinfo.com/api/data?list=englishmonarchs&format=json", function(text){
-  
-  var data = JSON.parse(text);
-  // console.log('hi')
-  window.alert(data)
-  window.alert(data.error)
-  console.log(data);
+readTextFile(
+  "https://raw.githubusercontent.com/CodingDonky/CodingDonky.github.io/\
+master/json/npc_generation_options.json", function(text){
+  var npc_data = JSON.parse(text);
+  // console.log(Object.keys(npc_data))
+  // console.log(npc_data.dog)
+  // console.log(npc_data);
 });
+// READING JSON FILE
 
-readTextFile()
+function getRandomListElement( data_list ) {
+  var list_element = data_list[ Math.floor(Math.random()*data_list.length) ];
+  return list_element;
+}
 
-function myFunction() {
-    // Popup window with a message
-    window.alert( document.getElementById("npc_type_radio_combat").checked  ); 
-    window.alert( document.getElementById("npc_type_radio_town").checked  ); 
-    window.alert( document.getElementById("npc_type_radio_wild").checked  ); 
-    // window.alert( document.getElementById("x").value  ); 
-    // document.getElementById("demo").innerHTML = "YOU CLICKED ME!";
+function mouseDown_generateNPC(obj){
+  print_contents = "";
+
+  // generate combat-focused NPC
+  if( document.getElementById("npc_type_radio_combat").checked ){
+    print_contents += Object.keys(npc_data)[0];
+  }// generate town-focused NPC
+  else if( document.getElementById("npc_type_radio_town").checked ){
+    print_contents += Object.keys(npc_data)[0];
+  }// generate exploration-focused NPC
+  else if( document.getElementById("npc_type_radio_explore").checked ){
+    print_contents += Object.keys(npc_data)[0];
+  }
+
+  document.getElementById('print_output').innerHTML = print_contents;
 }
 
 
@@ -46,8 +50,8 @@ class NPC {
     constructor(name) {
       this.name = name;
       this.occupation = "";
-      this.height = 0
-      this.width = 0
+      this.height = 0;
+      this.width = 0;
     }
     // Getter
     get area() {
