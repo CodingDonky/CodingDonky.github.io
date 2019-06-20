@@ -1,11 +1,11 @@
 {
     "names": ["john", "gorybdys"],
 
+    "races": ["human", "elf", "dwarf", "orc", "lizard-person"],
     "genders": ["male", "female"],
     "personalities": ["male", "female"],
     "mannerisms": ["twitchy", "always drunk", "laughs easily"],
     "quirks": ["can't wink", "adores babies"],
-    "races": ["human", "elf", "dwarf", "orc", "lizard-person"],
     "fears": ["bugs", "fire", "dogs", "darkness", "death", "heights", "underground"],
     "weaknesses": ["sugary foods", "shiny jewely"],
     "strengths": ["hardy", "fast", "strong"],

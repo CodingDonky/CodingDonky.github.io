@@ -56,27 +56,25 @@ function getRandomListElement( data_list ) {
 function mouseDown_generateNPC(obj){
   print_contents = "";
   // Object.keys(npc_json)
-
-  var c = npc_json.combat-focus
-  console.log( c );
-  console.log( c.classes );
-  // console.log( c.classes[0] );
+  // console.log(npc_json["combat-focus"]["classes_expanded"]["barbarian"])
 
   name = getRandomListElement( npc_json.names )
   print_contents += 'name: ' + name + '<br>';
   npc.name = name
 
+  race = getRandomListElement( npc_json.races )
+  print_contents += 'race: ' + race + '<br>';
+
   gender = getRandomListElement( npc_json.genders )
   print_contents += 'gender: ' + gender + '<br>';
+
+  print_contents += "<br>* Personality Traits *<br><br>"
 
   mannerism = getRandomListElement( npc_json.mannerisms )
   print_contents += 'mannerism: ' + mannerism + '<br>';
 
   quirk = getRandomListElement( npc_json.quirks )
   print_contents += 'quirk: ' + quirk + '<br>';
-
-  race = getRandomListElement( npc_json.races )
-  print_contents += 'race: ' + race + '<br>';
 
   weakness = getRandomListElement( npc_json.weaknesses )
   print_contents += 'weakness: ' + weakness + '<br>';
@@ -94,74 +92,84 @@ function mouseDown_generateNPC(obj){
   }// generate exploration-focused NPC
   else if( document.getElementById("npc_type_radio_explore").checked ){
     print_contents = generate_exploration_npc( print_contents );
+    print_contents = generate_combat_npc( print_contents );
   }
 
   document.getElementById('print_output').innerHTML = print_contents;
 }
 
 function generate_combat_npc( print_contents ) {
-  combat_class = getRandomListElement( npc_json.combat-focus.classes );
+  print_contents += "<br>* Combat Traits *<br><br>"
+  var npc_json_combat = npc_json["combat-focus"]
+
+  combat_class = getRandomListElement( npc_json_combat.classes );
   print_contents += 'class: ' + combat_class + '<br>';
 
-  posse = getRandomListElement( npc_json.combat-focus.posse );
+  posse = getRandomListElement( npc_json_combat.posse );
   print_contents += 'posse: ' + posse + '<br>';
 
-  ability = getRandomListElement( npc_json.combat-focus.abilities );
+  ability = getRandomListElement( npc_json_combat.abilities );
   print_contents += 'ability: ' + ability + '<br>';
 
-  combat_style = getRandomListElement( npc_json.combat-focus.combat_styles );
+  combat_style = getRandomListElement( npc_json_combat.combat_styles );
   print_contents += 'combat_style: ' + combat_style + '<br>';
 
-  loot = getRandomListElement( npc_json.combat-focus.loot );
+  loot = getRandomListElement( npc_json_combat.loot );
   print_contents += 'loot: ' + loot + '<br>';
 
-  long_term_goal = getRandomListElement( npc_json.combat-focus.long_term_goals );
+  long_term_goal = getRandomListElement( npc_json_combat.long_term_goals );
   print_contents += 'long_term_goal: ' + long_term_goal + '<br>';
 
   post_long_term_goal = getRandomListElement( 
-    npc_json.combat-focus.post_long_term_goals );
+    npc_json_combat.post_long_term_goals );
   print_contents += 'post_long_term_goal: ' + post_long_term_goal + '<br>';
 
   return print_contents
 }
 
 function generate_town_npc( print_contents ) {
-  job = getRandomListElement( npc_json.city-focus.jobs );
+  print_contents += "<br>* City Traits *<br><br>"
+  var npc_json_city = npc_json["city-focus"]
+
+  job = getRandomListElement( npc_json_city.jobs );
   print_contents += 'job: ' + job + '<br>';
 
-  skill_level = getRandomListElement( npc_json.city-focus.skill_levels );
+  skill_level = getRandomListElement( npc_json_city.skill_levels );
   print_contents += 'skill_level: ' + skill_level + '<br>';
   
-  trustworthiness = getRandomListElement( npc_json.city-focus.trustworthiness );
+  trustworthiness = getRandomListElement( npc_json_city.trustworthiness );
   print_contents += 'trustworthiness: ' + trustworthiness + '<br>';
 
-  friendliness = getRandomListElement( npc_json.city-focus.friendliness );
+  friendliness = getRandomListElement( npc_json_city.friendliness );
   print_contents += 'friendliness: ' + friendliness + '<br>';
 
-  house_material = getRandomListElement( npc_json.city-focus.house_material );
-  house_type = getRandomListElement( npc_json.city-focus.house_type );
-  house_adj = getRandomListElement( npc_json.city-focus.house_adj );
+  house_material = getRandomListElement( npc_json_city.house_material );
+  house_type = getRandomListElement( npc_json_city.house_type );
+  house_adj = getRandomListElement( npc_json_city.house_adj );
   house_description = house_adj + ' ' + house_material + ' ' + house_adj;
   print_contents += 'domicile: ' + house_description + '<br>';
 
-  nobility_status = getRandomListElement( npc_json.city-focus.nobility_status );
+  nobility_status = getRandomListElement( npc_json_city.nobility_status );
   print_contents += 'nobility_status: ' + nobility_status + '<br>';
 
-  pet = getRandomListElement( npc_json.city-focus.pets );
+  pet = getRandomListElement( npc_json_city.pets );
   print_contents += 'pet: ' + pet + '<br>';
 
   return print_contents
 }
 
 function generate_exploration_npc( print_contents ) {
-  sleep_location = getRandomListElement( npc_json.exploration-focus.sleep_locations );
+  print_contents += "<br>* Exploration Traits *<br><br>"
+  var npc_json_explore = npc_json["exploration-focus"]
+
+  sleep_location = getRandomListElement( npc_json_explore.sleep_locations );
   print_contents += 'sleep_location: ' + sleep_location + '<br>';
   
-  motivation = getRandomListElement( npc_json.exploration-focus.motivation );
+  motivation = getRandomListElement( npc_json_explore.motivation );
   print_contents += 'motivation: ' + motivation + '<br>';
 
   free_time_activity = getRandomListElement( 
-    npc_json.exploration-focus.free_time_activities );
+    npc_json_explore.free_time_activities );
   print_contents += 'free_time_activity: ' + free_time_activity + '<br>';
 
   return print_contents
