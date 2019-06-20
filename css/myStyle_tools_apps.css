@@ -1,0 +1,187 @@
+:root {
+  --canvas-size: 56em;
+
+  --row-length: 54em;
+  --col-left-large-len: 40em;
+  --col-right-small-len: 12em;
+}
+
+body {
+  background-color: white;
+ /* background: url("../images/splotchyRed.jpg") repeat; */
+}
+
+.page_content{
+  background: white;
+  /* background: url("../images/fantasy_large_background_2.jpg") repeat; */
+  /* background-position: center top;  */  
+
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin: auto;
+
+  outline-style: inset;
+  outline-color: gold;
+
+  min-width: 60em;
+  max-width: 60em;
+
+  opacity: 0.9;
+}
+
+.canvas_wrapper{
+  background: white;
+  /* background: url("../images/fantasy_large_background_2.jpg") repeat; */
+  /* background-position: center top;  */  
+
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-bottom: 1em;
+  padding-top: 1em;
+  margin: auto;
+
+  outline-style: inset;
+  outline-color: gold;
+
+  min-width: var(--canvas-size);
+  max-width: var(--canvas-size);
+
+  opacity: 0.9;
+}
+
+.app_row_wrapper{
+  /* outline-style: inset;
+  outline-color: gold; */
+  border-bottom: .2em solid black;
+
+  /* margin: 1em; */
+  padding: 1em;
+
+  /* padding-right: 1em;
+  padding-left: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em; */
+
+  min-width: var(--row-length);
+  max-width: var(--row-length);
+}
+
+.app_row_col_left_large{
+  margin-right: 1em;
+
+  /* outline-style: inset;
+  outline-color: red; */
+  display: inline-block;
+  min-width: var(--col-left-large-len);
+  max-width: var(--col-left-large-len);
+}
+
+.app_row_col_right_small{
+  vertical-align: middle;
+
+  /* outline-style: inset;
+  outline-color: blue; */
+  display: inline-block;
+  min-width: 2em;
+  max-width: var(--col-right-small-len);
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  background-color: #3CBC8D;
+  color: white;
+}
+
+/* Style buttons */
+.button_type1 {
+  border: none; /* Remove borders */
+  color: white; /* White text */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+
+  padding: .4em;
+  margin: 0em;
+
+  min-width: .5em;
+  max-width: 12em;
+  min-height: 1.1em;
+  max-height: 4em;
+
+  background-color: brown;
+  border-radius: 20%;
+  
+  text-align: center;
+  /* vertical-align: middle; */
+
+  box-shadow: 0 9px #999;
+}
+
+/* Darker background on mouse-over */
+.button_type1:hover {
+  background-color: red;
+  /* background-color: gold;
+  border-radius: 50%; */
+}
+
+.button_type1:active {
+  background-color: red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* Style buttons */
+
+.button_text{
+  color: white;
+  text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black;
+
+  /* padding: auto; */
+  /* margin-top: auto; */
+}
+
+
+h1{
+  /* rgb(255, 140, 140) */
+  color: white;
+  text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black;
+
+  font-weight: 900;
+  font-size: 46px;
+  /* -webkit-text-stroke: .1px black; */
+  font-family: 'Montserrat', sans-serif;
+
+  text-align: center;
+
+  padding: 0em;
+  margin: 0em;
+}
+
+h5{
+  color: white;
+  text-shadow:
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black;
+
+  font-weight: 900;
+  font-size: 34px;
+  /* -webkit-text-stroke: .1px white; */
+  font-family: 'Cinzel', sans-serif; /* Professional & Pleasant */
+
+  padding: 0em;
+  margin: 0em;
+}

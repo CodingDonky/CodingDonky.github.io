@@ -6,9 +6,8 @@
 }
 
 body {
-  /* background-color: white; */
- background: url("../images/splotchyRed.jpg") repeat;
- /* background: url("../images/fantasy_large_background_2.jpg") repeat; */
+  background-color: white;
+ /* background: url("../images/splotchyRed.jpg") repeat; */
 }
 
 .page_content{
