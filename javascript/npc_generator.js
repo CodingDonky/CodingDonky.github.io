@@ -161,16 +161,17 @@ function generate_town_npc( print_contents ) {
   var npc_json_city = npc_json["city-focus"]
 
   job = getRandomListElement( npc_json_city.jobs );
-  print_contents += 'job: ' + job + '<br>';
-
   skill_level = getRandomListElement( npc_json_city.skill_levels );
-  print_contents += 'skill_level: ' + skill_level + '<br>';
+  print_contents += 'job: ' + skill_level + " " + job + '<br>';
+
+  // skill_level = getRandomListElement( npc_json_city.skill_levels );
+  // print_contents += 'skill_level: ' + skill_level + '<br>';
   
   trustworthiness = getRandomListElement( npc_json_city.trustworthiness );
   print_contents += 'trustworthiness: ' + trustworthiness + '<br>';
 
-  friendliness = getRandomListElement( npc_json_city.friendliness );
-  print_contents += 'friendliness: ' + friendliness + '<br>';
+  demeanor = getRandomListElement( npc_json_city.demeanors );
+  print_contents += 'demeanor: ' + demeanor + '<br>';
 
   house_material = getRandomListElement( npc_json_city.house_material );
   house_type = getRandomListElement( npc_json_city.house_type );
