@@ -17,7 +17,7 @@
         "loves terrible jokes"],
     "physical_quirks": ["badly scarred", "very fat", "very skinny", "lazy eye", "missing an arm", "missing a leg", 
         "crooked nose", "unshowered", "odd facial birthmark", "sick", "missing teeth", "always tired", 
-        "sweaty", "bald", "out of breath" , "limps", "very tall", "very short", "young", "old"],
+        "sweaty", "bald", "always out of breath" , "limps", "very tall", "very short", "young", "old"],
     "fears": ["bugs", "fire", "dogs", "darkness", "death", "heights", "underground", "bodies of water", 
         "crowds", "magic", "thugs", "god", "thunderstorms", "ghosts", "the undead", "commitment", 
         "technology", "growing old", "small hands", "warts", "disease", "open spaces", "authority"],
@@ -25,7 +25,7 @@
         "overly protective of family", "greedy", "easily fooled", "lazy", "jealous", "lustful", "proud", 
         "envious", "wrathful", "easily corruptable", "gullible", "afraid of bullies"],
     "strengths": ["brave", "cool-headed", "perfect memory", "extremely intelligent", "expert social manipulator", 
-        "has close allies", "diplomatic", "intimidating", "secret talent", "relied on by many", 
+        "has close allies", "diplomatic", "intimidating", "secret talent", "friends with many", 
         "protected", "lucky", "charismatic", "has friends in the law", "protected by status"],
 
     "city-focus": {
@@ -79,7 +79,7 @@
             "unaffected by mental spells", "magic resistance", "physical resistance"],
         "combat_styles": ["overly defensive", "defensive", "offensive", "recklessly offensive", "blanced"],
         "loot": ["5 GP", "500 GP", "50 GP", "100 GP", "20 GP", "a jewel"],
-        "long_term_goals": ["become king", "kill a certain noble", "kill a certain colonel", 
+        "long_term_goals": ["become king", "kill a certain noble", "kill a certain general", 
             "become a noble", "become rich", "get a massive following", "start a new town", 
             "assassinate a list of nobles and travelers", "live away from people", 
             "travel to a certain large city", "find their family", "become the strongest", 
@@ -106,7 +106,7 @@
             "hunts", "gardens and tends to their domicile", "experiments with magic", 
             "challenges others to duels", "trains", "paints", "reads", "practices sleight of hand", 
             "talks to them self", "gorges themself", "tortures animals", "hunts travelers", 
-            "stalks another traveller", "pursueing an unknown person", "simple hikes"]
+            "stalks another traveller", "pursuing a target", "simple hikes"]
     }
     
 
