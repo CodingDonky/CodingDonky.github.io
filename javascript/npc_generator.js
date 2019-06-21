@@ -25,6 +25,24 @@ master/json/npc_generation_options.json", function(text){
 });
 //////////////////// READING JSON FILE ////////////////////
 
+//////////////////// READING TEXT FILE ////////////////////
+var name_list = null
+
+function setNamesList( names ){
+  name_list = names.split('\n')
+}
+
+// provide file location
+const nameFileUrl = 'https://raw.githubusercontent.com/dominictarr/random-name/master/first-names.txt' 
+// read txt file from url
+fetch(nameFileUrl)
+   .then( r => r.text() )
+   .then( t => setNamesList(t) )
+//////////////////// READING TEXT FILE ////////////////////
+
+
+
+
 //////////////////// NPC CLASS DEFINITION ////////////////////
 class NPC {
     constructor(name) {
@@ -58,15 +76,15 @@ function mouseDown_generateNPC(obj){
   // Object.keys(npc_json)
   // console.log(npc_json["combat-focus"]["classes_expanded"]["barbarian"])
 
-  name = getRandomListElement( npc_json.names )
+  name = getRandomListElement( name_list )
   print_contents += 'name: ' + name + '<br>';
   npc.name = name
 
   race = getRandomListElement( npc_json.races )
   print_contents += 'race: ' + race + '<br>';
 
-  gender = getRandomListElement( npc_json.genders )
-  print_contents += 'gender: ' + gender + '<br>';
+  // gender = getRandomListElement( npc_json.genders )
+  // print_contents += 'gender: ' + gender + '<br>';
 
   print_contents += "<br>* Personality Traits *<br><br>"
 
