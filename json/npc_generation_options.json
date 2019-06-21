@@ -3,7 +3,7 @@
 
     "races": ["human", "human", "human", "elf", "dwarf", "orc", "lizard-person", "cat-person", "goblin"],
     "genders": ["male", "female"],
-    "alignments": ["lg", "ln", "le", "ng", "nn", "ne", "cg", "cn", "ce"],
+    "alignments": ["LG", "LN", "LE", "NG", "NN", "NE", "CG", "CN", "CE"],
 
     "mannerisms": ["twitchy", "always drunk", "laughs easily", "deadpan", "refuses to sit down", 
         "butts into conversations", "gives long speeches", "obsessive with their career", "racist", 
@@ -27,7 +27,10 @@
 
     "city-focus": {
         "jobs": ["iron smith", "trader", "beggar", "tailor", "thief", "glass blower", "wood carver", "cook", 
-            "priest", "stone mason"],
+            "priest", "stone mason", "armorer", "apothecary", "barber", "jester", "butler", "candlemaker", 
+            "carpenter", "clerk", "clothier", "fletcher", "janitor", "messenger", "doctor", "student", "scribe", 
+            "guard", "lawman", "watchman", "shoemaker", "potter", "painter", "banker", "herbalist", "magician", 
+            "captain", "laborer", "convict" ,"pickpocket", "burglar", "assassin"],
         "skill_levels": ["master", "skilled", "apprentice", "novice", "utterly incompetent"],
         "trustworthiness": ["has never broken a promise", "always protects their close friends", 
             "looks out only for themself", "backstabbing scumbag", "dishonest, yet candid", 
@@ -35,11 +38,13 @@
         "friendliness": ["a total dick", "extremely friendly", "distant", "reproachful", "anxious", 
             "always willing to lend a hand", "outwardly rude", "cordially polite", "wants people to like them"],
         "wealth": ["disgustingly wealthy", "upper middle class wealthy", "middle class wealthy", "working class",
-            "struggling to get by", "about to be evicted", "impovrished", "in massive debt"],
+            "struggling to get by", "about to be evicted", "impovrished", "in massive debt", 
+            "makes more than enough", "some spending money", "money is always tight", 
+            "finances doing better and better", "losing money, fast", "nearly bankrupt"],
         "house_material": ["stone", "brick", "wood", "wood", "straw", "marble"],
         "house_type": ["shack", "cottage", "cabin", "house", "manor", "mansion"],
         "house_adj": ["ornate", "gnarled", "homely", "infested", "putrid", "old", "small", "large", 
-            "comfortable", "dusty", "immaculate", "broken-down"],
+            "comfortable", "dusty", "immaculate", "broken-down", "blue", "green", "red", "rickity"],
         "nobility_status": ["noble", "peasant", "peasant", "peasant"],
         "pets": ["dog", "cat", "parrot", "lizard", "fish", "monkey", "none", "none", "none", "none"]
     },

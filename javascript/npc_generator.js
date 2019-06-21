@@ -83,6 +83,9 @@ function mouseDown_generateNPC(obj){
   race = getRandomListElement( npc_json.races )
   print_contents += 'race: ' + race + '<br>';
 
+  alignment = getRandomListElement( npc_json.alignments )
+  print_contents += 'alignment: ' + alignment + '<br>';
+
   // gender = getRandomListElement( npc_json.genders )
   // print_contents += 'gender: ' + gender + '<br>';
 
