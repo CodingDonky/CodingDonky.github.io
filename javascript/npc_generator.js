@@ -73,8 +73,11 @@ function mouseDown_generateNPC(obj){
   mannerism = getRandomListElement( npc_json.mannerisms )
   print_contents += 'mannerism: ' + mannerism + '<br>';
 
-  quirk = getRandomListElement( npc_json.quirks )
-  print_contents += 'quirk: ' + quirk + '<br>';
+  personality_quirk = getRandomListElement( npc_json.personality_quirks )
+  print_contents += 'personality_quirk: ' + personality_quirk + '<br>';
+
+  physical_quirk = getRandomListElement( npc_json.physical_quirks )
+  print_contents += 'physical_quirk: ' + physical_quirk + '<br>';
 
   weakness = getRandomListElement( npc_json.weaknesses )
   print_contents += 'weakness: ' + weakness + '<br>';
@@ -146,7 +149,7 @@ function generate_town_npc( print_contents ) {
   house_material = getRandomListElement( npc_json_city.house_material );
   house_type = getRandomListElement( npc_json_city.house_type );
   house_adj = getRandomListElement( npc_json_city.house_adj );
-  house_description = house_adj + ' ' + house_material + ' ' + house_adj;
+  house_description = house_adj + ' ' + house_material + ' ' + house_type;
   print_contents += 'domicile: ' + house_description + '<br>';
 
   nobility_status = getRandomListElement( npc_json_city.nobility_status );
