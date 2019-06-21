@@ -74,10 +74,12 @@ function mouseDown_generateNPC(obj){
   print_contents += 'mannerism: ' + mannerism + '<br>';
 
   personality_quirk = getRandomListElement( npc_json.personality_quirks )
-  print_contents += 'personality_quirk: ' + personality_quirk + '<br>';
+  personality_quirk2 = getRandomListElement( npc_json.personality_quirks )
+  print_contents += 'personality: ' + personality_quirk + ', ' + personality_quirk2 + '<br>';
 
   physical_quirk = getRandomListElement( npc_json.physical_quirks )
-  print_contents += 'physical_quirk: ' + physical_quirk + '<br>';
+  physical_quirk2 = getRandomListElement( npc_json.physical_quirks )
+  print_contents += 'physical quirks: ' + physical_quirk + ', ' + physical_quirk2 + '<br>';
 
   weakness = getRandomListElement( npc_json.weaknesses )
   print_contents += 'weakness: ' + weakness + '<br>';
@@ -110,6 +112,9 @@ function generate_combat_npc( print_contents ) {
 
   posse = getRandomListElement( npc_json_combat.posse );
   print_contents += 'posse: ' + posse + '<br>';
+
+  feat = getRandomListElement( npc_json_combat.feats );
+  print_contents += 'feat: ' + feat + '<br>';
 
   ability = getRandomListElement( npc_json_combat.abilities );
   print_contents += 'ability: ' + ability + '<br>';
@@ -166,14 +171,14 @@ function generate_exploration_npc( print_contents ) {
   var npc_json_explore = npc_json["exploration-focus"]
 
   sleep_location = getRandomListElement( npc_json_explore.sleep_locations );
-  print_contents += 'sleep_location: ' + sleep_location + '<br>';
+  print_contents += 'sleep location: ' + sleep_location + '<br>';
   
   motivation = getRandomListElement( npc_json_explore.motivation );
   print_contents += 'motivation: ' + motivation + '<br>';
 
   free_time_activity = getRandomListElement( 
     npc_json_explore.free_time_activities );
-  print_contents += 'free_time_activity: ' + free_time_activity + '<br>';
+  print_contents += 'how they spend their free time: ' + free_time_activity + '<br>';
 
   return print_contents
 }
