@@ -1,0 +1,95 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./css/myStyle_tools_apps.css">
+    <link rel="shortcut icon" href="./images/goldAperture.png">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel|Kanit|Montserrat|Hind+Vadodara" 
+    rel="stylesheet">
+    <title>Brew</title>  <!-- title of page in the tab -->
+    <script async src="./javascript/npc_generator.js"></script>
+</head>
+<body>
+
+<!--_____ THIS IS THE START OF THE PAGE CONTENT _____-->
+<div class="page_content">
+
+  <div class="canvas_wrapper">
+
+    <div class="app_row_wrapper">
+        <div class="app_row_col_left_large">
+          <form>
+              <input type="radio" id="npc_type_radio_combat" name="npc_type_radio" value="combat-focused"> 
+                Combat-Oriented (Combat stats will be the primary focus) <br>
+              <input type="radio" id="npc_type_radio_town" name="npc_type_radio" value="rp-focused" checked> 
+                Town-Oriented (Generates a personality and job for the resident of a town/city) <br>
+              <input type="radio" id="npc_type_radio_explore" name="npc_type_radio" value="combo"> 
+                Exploration-Oriented (The NPC does not live in a city, and is partially combat oriented)
+          </form>
+        </div>
+  
+        <div class="app_row_col_right_small">
+            <div onmousedown="mouseDown_generateNPC(this)" class="button_type1">
+                <div class="button_text">
+                    Generate 
+                    <br>
+                    NPC
+                </div>
+           </div>
+        </div>
+    </div>
+    
+
+    <div class="app_row_wrapper">
+
+      <p id="print_output">
+        
+      </p>
+
+    </div>
+
+
+
+    <!-- <div class="app_row_wrapper">
+      <form>
+        <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle2" value="Car"> I have a car 
+      </form>
+    </div> -->
+
+    <!-- <div class="app_row_wrapper">
+      <form>
+        Select a file: <input type="file" name="myFile">
+      </form>
+    </div> -->
+
+    <!-- <div class="app_row_wrapper">
+      <form>
+        Quantity (between 1 and 5):
+        <input type="number" name="quantity" min="1" max="5">
+      </form>
+    </div> -->
+    
+    <!-- <div class="app_row_wrapper">
+      <form>
+        <input type="range" name="points" min="0" max="10">
+      </form>
+    </div> -->
+
+    <!-- <div class="app_row_wrapper">
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Internet Explorer">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+    </div> -->
+
+
+  </div>  
+
+</div>  
+<!--_____ THIS IS THE END OF THE PAGE CONTENT _____-->
+
+</body>
+</html>
