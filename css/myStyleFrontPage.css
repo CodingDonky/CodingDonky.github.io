@@ -9,14 +9,14 @@
 }
 
 body {
-  background-color: white;
+  background-color: grey;
  /* background: url("../images/splotchyRed.jpg") repeat; */
 }
 
 .page_content{
-  background: white;
+  background: lightgrey;
   /* background: url("../images/fantasy_large_background_2.jpg") repeat; */
-  /* background-position: center top;  */  
+  /* background-position: center top;  */
 
   padding-left: 1em;
   padding-right: 1em;
@@ -128,7 +128,7 @@ body {
 }
 
 .middle_column_sub_box_center:hover {
-  background-color: rgb(255, 140, 140);
+  background-color: rgb(255, 150, 255);
   border-radius: 50%;
 }
 
@@ -231,8 +231,8 @@ h5{
         0 -0.05em black;
 
   font-weight: 900;
-  font-size: 36px;
-  /* -webkit-text-stroke: .1px white; */
+  font-size: 44px;
+  /* -webkit-text-stroke: .1px red; */
   font-family: 'Cinzel', sans-serif; /* Professional & Pleasant */
 
   padding: 0em;
@@ -264,6 +264,7 @@ h5{
 .icon_btn_tl:hover {
   background-color: gold;
   border-radius: 50%;
+  border: 5px solid black;
 }
 /* Style buttons */
 
@@ -290,6 +291,7 @@ h5{
 .icon_btn_ml:hover {
   background-color: gold;
   border-radius: 50%;
+  border: 5px solid black;
 }
 /* Style buttons */
 
@@ -316,6 +318,7 @@ h5{
 .icon_btn_bl:hover {
   background-color: gold;
   border-radius: 50%;
+  border: 5px solid black;
 }
 /* Style buttons */
 
@@ -342,6 +345,7 @@ h5{
 .icon_btn_tr:hover {
   background-color: gold;
   border-radius: 50%;
+  border: 5px solid black;
 }
 /* Style buttons */
 
@@ -368,6 +372,7 @@ h5{
 .icon_btn_mr:hover {
   background-color: gold;
   border-radius: 50%;
+  border: 5px solid black;
 }
 /* Style buttons */
 
@@ -394,6 +399,7 @@ h5{
 .icon_btn_br:hover {
   background-color: gold;
   border-radius: 50%;
+  border: 5px solid black;
   /* background-image: linear-gradient(to top, purple , gold); */
 }
 /* Style buttons */

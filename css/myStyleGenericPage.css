@@ -53,6 +53,11 @@ body {
 
   min-width: var(--row-length);
   max-width: var(--row-length);
+
+  /* font-size: 1em; */
+
+  min-width: 60em;
+  max-width: 60em;
 }
 
 .row_left_icon{
@@ -79,6 +84,17 @@ body {
   max-width: var(--row-right-content-length);
 }
 
+.row_left_image{
+  /* outline-style: inset;
+  outline-color: blue; */
+
+  margin-right: 1em;
+  margin-left: 1em;
+
+  display: inline-block;
+  min-width: var(--row-left-icon-length);
+  max-width: var(--row-left-icon-length);
+}
 
 
 .column_midright{
@@ -142,6 +158,25 @@ body {
   max-height: var(--middle-col-subsection-size); */
 }
 
+table {
+  float: left;
+  border: 1px solid black;
+
+  padding: auto;
+
+  margin-right: 1em;
+  margin-left: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+th, td {
+  border: 1px solid black;
+
+  /* padding: auto; */
+  /* margin: auto; */
+}
+
 
 img {
   display: block;
@@ -150,11 +185,21 @@ img {
   width: 100%;
 }
 
+.img_right {
+  float: right;
+}
+
+.img_left {
+  float: left;
+}
+
 p{
-  font-family: 'Montserrat', serif; /* Fantasy like */
+  font-family: 'Cinzel', serif; /* Fantasy like */
   color: Black;
   font-weight: bold;
   /* -webkit-text-stroke: .8px grey; */
+  font-size: 1em;
+  text-indent: 2.2em;
 }
 
 .p_Fonts{
@@ -229,7 +274,7 @@ h4{
 }
 
 h5{
-  color: white;
+  color: gold;
   text-shadow:
         0.05em 0 black,
         0 0.05em black,
@@ -284,109 +329,5 @@ h5{
   background-color: gold;
   border-radius: 50%;
   border: 5px solid black;
-}
-/* Style buttons */
-
-/* Style buttons */
-.icon_btn_row1 {
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  font-size: 16px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
-
-  padding: 0em;
-  margin: 0em;
-
-  min-width: var(--row-left-icon-length);
-  max-width: var(--row-left-icon-length);
-  min-height: var(--row-left-icon-length);
-  max-height: var(--row-left-icon-length);
-
-  background:url("../images/front_page_icons/1.png") no-repeat left center;
-  background-size: cover;
-}
-
-/* Darker background on mouse-over */
-.icon_btn_row1:hover {
-  background-color: gold;
-  border-radius: 50%;
-}
-/* Style buttons */
-
-/* Style buttons */
-.icon_btn_row2 {
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  font-size: 16px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
-
-  padding: 0em;
-  margin: 0em;
-
-  min-width: var(--row-left-icon-length);
-  max-width: var(--row-left-icon-length);
-  min-height: var(--row-left-icon-length);
-  max-height: var(--row-left-icon-length);
-
-  background:url("../images/front_page_icons/2.png") no-repeat left center;
-  background-size: cover;
-}
-
-/* Darker background on mouse-over */
-.icon_btn_row2:hover {
-  background-color: gold;
-  border-radius: 50%;
-}
-/* Style buttons */
-
-/* Style buttons */
-.icon_btn_row3 {
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  font-size: 16px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
-
-  padding: 0em;
-  margin: 0em;
-
-  min-width: var(--row-left-icon-length);
-  max-width: var(--row-left-icon-length);
-  min-height: var(--row-left-icon-length);
-  max-height: var(--row-left-icon-length);
-
-  background:url("../images/front_page_icons/3.png") no-repeat left center;
-  background-size: cover;
-}
-
-/* Darker background on mouse-over */
-.icon_btn_row3:hover {
-  background-color: gold;
-  border-radius: 50%;
-}
-/* Style buttons */
-
-/* Style buttons */
-.icon_btn_row4 {
-  border: none; /* Remove borders */
-  color: white; /* White text */
-  font-size: 16px; /* Set a font size */
-  cursor: pointer; /* Mouse pointer on hover */
-
-  padding: 0em;
-  margin: 0em;
-
-  min-width: var(--row-left-icon-length);
-  max-width: var(--row-left-icon-length);
-  min-height: var(--row-left-icon-length);
-  max-height: var(--row-left-icon-length);
-
-  background:url("../images/front_page_icons/4.png") no-repeat left center;
-  background-size: cover;
-}
-
-/* Darker background on mouse-over */
-.icon_btn_row4:hover {
-  background-color: gold;
-  border-radius: 50%;
 }
 /* Style buttons */
