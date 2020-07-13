@@ -175,6 +175,11 @@ th, td {
 
   /* padding: auto; */
   /* margin: auto; */
+  font-size: 1.15em;
+
+  /* text-indent: 0.3em; */
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 
@@ -194,7 +199,7 @@ img {
 }
 
 p{
-  font-family: 'Cinzel', serif; /* Fantasy like */
+  font-family: 'Montserrat', sans-serif;
   color: Black;
   font-weight: bold;
   /* -webkit-text-stroke: .8px grey; */
