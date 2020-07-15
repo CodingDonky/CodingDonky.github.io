@@ -56,17 +56,92 @@
         </table>
 
         <p>
-        Every player character possesses each of these 6 Attributes.
-        A number is assigned, higher numbers represent talent in all skills
-        controlled by that Attribute. A value of 3-5 is considered about
-        average for most Attributes up to a realistic maximum of around 12.
+        Every entity possesses six core attributes. Every roll you make is
+        tied to one of these attributes, the higher its value the higher the
+        roll is likely to be. A value of 3-5 is considered about average for
+        a human in any attribute. A value of 12 is considered the peak of
+        natural human ability. Your attributes directly affect your aspect
+        pool sizes, which act as health bars. High values in a given
+        attribute are required to succeed on difficult rolls, however,
+        low values leave one extremely vulnerable.
+        </p>
+
+        <table style="float: right;">
+          <tr>
+            <th>Value</th>
+            <th>Roll</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>1d6-3</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>1d6-1</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>1d6</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>1d6+1</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>1d6+2</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>2d6</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>2d6+1</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>2d6+2</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>3d6</td>
+          </tr>
+          <tr>
+            <td>10</td>
+            <td>3d6+1</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>3d6+2</td>
+          </tr>
+          <tr>
+            <td>12</td>
+            <td>4d6</td>
+          </tr>
+        </table>
+
+        <p>
+        The six attributes are divided into three groups that represent
+        different aspects of an entity. The first of your physical
+        attributes is strength, a measure of raw power. The second is
+        dexterity, a measure of one’s nimbleness and sleight of hand. Next
+        are the intelligence attributes. Acuity is the sharpness of your mind,
+        and dictates magical prowess as well as perceptive ability. Memory
+        directly relates to the number of abilities and spells you can
+        memorize at any given time. The final aspect is charisma, or some
+        may call it your soul. It consists of the dual attributes, faith and
+        ego. Faith allows one to commune with greater powers than their own,
+        and perform magic through holy talismans. Ego allows for more personal
+        power and dictates deception and intimidation. Certain rules only
+        apply to entities with more faith than ego, and visa versa.
         </p>
         <p>
         Attribute checks are made when your raw natural abilities are tested,
         for example you might be asked to roll a Strength check for trying to
         kick down a hardwood door. For every 3 points in an attribute, add 1d6
         to your roll. Add the remaining attribute points not used to the roll.
-        You always roll at least 1d6. Consult the table below for an easy
+        You always roll at least 1d6. Consult the table to the right for an easy
         visualization.
         </p>
         <!-- ATTRIBUTES END -->
@@ -95,21 +170,35 @@
         </table>
 
         <p>
-        Your Aspects function slightly differently. Each Aspect has an “Aspect
-        Pool”, which is a number of spendable tokens possessed by your
-        character. Your total Aspect Pool value is calculated by adding the
-        two governed Attributes and subtracting one. For example, your Physical
-        Pool would have a value equal to your Strength plus your Dexterity
-        minus one.
+        Every entity has three aspect pools corresponding to their physique,
+        intelligence, and charisma. Every aspect pool is governed by two
+        attributes, colors are used to delineate this. Aspect pools act as
+        spendable tokens that are lost when you take damage or expend effort.
+        Your maximum aspect pool value is calculated by adding the two governed
+        attributes. For example, your physical aspect pool would have a maximum
+        value equal to your Strength plus your Dexterity value. If you were to
+        take two physical damage, you would lose two tokens from your physical
+        pool. These could be regained by resting or being healed, but not past
+        your maximum.
         </p>
         <p>
-        Your Physical Pool is your health point total and gets reduced as your
-        body takes damage, once it goes to zero you are in critical condition.
-        You can draw from your physical pool to dodge attacks.
+        Your Physical Pool acts as a conventional health point total and gets
+        reduced as your body takes damage or expend physical effort. Once it
+        goes to zero you are in critical condition and begin dying. Without
+        outside intervention you will die within a minute. You can draw from
+        your physical pool to use certain abilities including dodging blows and
+        performing reckless power attacks. Some Strength and Dexterity skills
+        can reduce the cost of certain abilities. A short rest of several hours
+        can restore 1 token once per day. A long rest of eight hours can
+        restore 2 tokens once per day, 3 tokens if the rest was in a notably
+        safe and comfortable location.
         </p>
         <p>
-        You draw from your Intellect Pool to use spells and whatnot, once it
-        reaches zero you are rendered unconscious.
+        You draw from your Intelligence Pool to use arcane magic and perform a
+        number of mental abilities. If it reaches zero you are rendered
+        completely unconscious for several hours. Tools such as emblems can
+        reduce the cost of particular spells and abilities. Intellect pool
+        tokens restore three times faster than physical pool tokens over a rest.
         </p>
         <p>
         Your Charisma Pool can be drawn from for faith based abilities and
@@ -122,8 +211,8 @@
         Draining your Charasma Pool may be extremely deadly, or it may be
         harmless depending on the situation.
         </p>
-        <img src="./images/front_page_icons/1.png" alt="Pineapple"
-        style="float:left;width:170px;height:170px;margin-right:15px;">
+        <img src="./images/rgb_triangle.png" alt="Pineapple"
+        style="float:right; width:170px;height:150px;margin-right:15px;opacity:60%;">
         <p>
         The three Aspect Pools basically mean you have three health bars,
         and it’s almost guaranteed that every character will have a fatal
